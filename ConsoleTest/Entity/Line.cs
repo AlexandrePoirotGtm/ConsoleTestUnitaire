@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace ConsoleTest
 {
-    class Program
+    public class Line
     {
-        static void Main(string[] args)
-        {
-
-        }
+        public Product Product { get; set; }
+        public int Quantity { get; set; }
     }
 }
