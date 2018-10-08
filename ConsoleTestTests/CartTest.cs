@@ -30,5 +30,22 @@ namespace ConsoleTestTests
 
             Assert.AreEqual(100,panier.GetTotal());
         }
+
+        [TestMethod]
+        public void FraiDePortOffer100()
+        {
+            var panier = new Cart();
+            panier.Lines.Add(new Line
+            {
+                Product = new Product
+                {
+                    Name = "Truite",
+                    Price = 20
+                },
+                Quantity = 5
+            });
+
+            Assert.AreEqual(100, panier.GetTotal());
+        }
     }
 }
